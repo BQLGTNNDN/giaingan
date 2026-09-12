@@ -9,6 +9,7 @@
   </title>
 
   <style>
+
     /* =========================================================
        RESET
     ========================================================= */
@@ -23,24 +24,27 @@
       width: 100%;
       height: 100%;
       overflow: hidden;
-      font-family: "Segoe UI", system-ui, Arial, sans-serif;
+
+      font-family:
+        "Segoe UI",
+        system-ui,
+        Arial,
+        sans-serif;
+
       background: #e8ecf1;
     }
 
+
     /* =========================================================
-       TOPBAR
+       HEADER
+       MÀU XANH THEO MẪU LOGO
     ========================================================= */
     .topbar {
+
       width: 100%;
       height: 56px;
 
-      background:
-        linear-gradient(
-          135deg,
-          #071426 0%,
-          #12315b 45%,
-          #1e4d8c 100%
-        );
+      background: #0661B6;
 
       padding: 0 24px;
 
@@ -50,29 +54,36 @@
 
       flex-shrink: 0;
 
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.22);
+      box-shadow:
+        0 2px 8px rgba(0,0,0,.18);
 
       position: relative;
       z-index: 10;
     }
 
+
     /* =========================================================
-       BRAND
+       LOGO + BRAND
     ========================================================= */
     .brand {
+
       display: flex;
       align-items: center;
+
       gap: 12px;
 
       min-width: 0;
     }
 
+
     /* LOGO */
     .seal {
+
       width: 42px;
       height: 42px;
 
       border-radius: 50%;
+
       overflow: hidden;
 
       background: #ffffff;
@@ -83,13 +94,16 @@
 
       flex-shrink: 0;
 
-      border: 2px solid rgba(255, 255, 255, 0.45);
+      border: 2px solid
+        rgba(255,255,255,.75);
 
       box-shadow:
-        0 1px 5px rgba(0, 0, 0, 0.30);
+        0 1px 5px rgba(0,0,0,.25);
     }
 
+
     .seal img {
+
       width: 100%;
       height: 100%;
 
@@ -98,17 +112,22 @@
       display: block;
     }
 
+
     /* =========================================================
        BRAND TEXT
     ========================================================= */
     .brand-txt {
+
       min-width: 0;
     }
 
+
     .brand-txt strong {
+
       display: block;
 
       font-size: 13px;
+
       font-weight: 700;
 
       color: #ffffff;
@@ -117,27 +136,32 @@
 
       white-space: nowrap;
 
-      letter-spacing: 0.15px;
+      letter-spacing: .15px;
     }
 
+
     .brand-txt span {
+
       display: block;
 
       margin-top: 2px;
 
       font-size: 10px;
 
-      color: rgba(255, 255, 255, 0.62);
+      color:
+        rgba(255,255,255,.78);
 
       line-height: 1.2;
 
       white-space: nowrap;
     }
 
+
     /* =========================================================
-       TOPBAR RIGHT
+       HEADER RIGHT
     ========================================================= */
     .topbar-right {
+
       display: flex;
       align-items: center;
 
@@ -146,8 +170,10 @@
       flex-shrink: 0;
     }
 
+
     /* KH 2026 */
     .badge {
+
       display: inline-flex;
       align-items: center;
 
@@ -156,21 +182,26 @@
       padding: 0 12px;
 
       font-size: 10px;
+
       font-weight: 600;
 
-      color: #7dd3fc;
+      color: #ffffff;
 
-      background: rgba(125, 211, 252, 0.12);
+      background:
+        rgba(255,255,255,.14);
 
-      border: 1px solid rgba(125, 211, 252, 0.20);
+      border:
+        1px solid rgba(255,255,255,.25);
 
       border-radius: 15px;
 
       white-space: nowrap;
     }
+
 
     /* DATE */
     .date {
+
       display: inline-flex;
       align-items: center;
 
@@ -180,34 +211,42 @@
 
       font-size: 10px;
 
-      color: rgba(255, 255, 255, 0.72);
+      color: #ffffff;
 
-      background: rgba(255, 255, 255, 0.07);
+      background:
+        rgba(255,255,255,.10);
 
-      border: 1px solid rgba(255, 255, 255, 0.08);
+      border:
+        1px solid rgba(255,255,255,.20);
 
       border-radius: 15px;
 
       white-space: nowrap;
     }
 
+
     /* =========================================================
-       MAIN
+       MAIN DASHBOARD
     ========================================================= */
     .main-wrap {
+
       width: 100%;
 
-      height: calc(100vh - 56px);
+      height:
+        calc(100vh - 84px);
 
-      padding: 7px 8px 8px 8px;
+      padding:
+        7px 8px 7px 8px;
 
       background: #e8ecf1;
     }
+
 
     /* =========================================================
        IFRAME CONTAINER
     ========================================================= */
     .iframe-container {
+
       position: relative;
 
       width: 100%;
@@ -220,10 +259,12 @@
       overflow: hidden;
 
       box-shadow:
-        0 2px 16px rgba(0, 0, 0, 0.08);
+        0 2px 16px rgba(0,0,0,.08);
     }
 
+
     .iframe-container iframe {
+
       position: absolute;
 
       top: 0;
@@ -237,27 +278,68 @@
       display: block;
     }
 
+
+    /* =========================================================
+       FOOTER
+       CÙNG MÀU HEADER
+    ========================================================= */
+    .footer {
+
+      width: 100%;
+
+      height: 28px;
+
+      background: #0661B6;
+
+      color:
+        rgba(255,255,255,.92);
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: center;
+
+      padding: 0 12px;
+
+      font-size: 9px;
+
+      font-weight: 500;
+
+      letter-spacing: .1px;
+
+      flex-shrink: 0;
+    }
+
+
     /* =========================================================
        TABLET
     ========================================================= */
     @media (max-width: 768px) {
 
       .topbar {
+
         height: 50px;
 
         padding: 0 14px;
       }
 
+
       .seal {
+
         width: 34px;
         height: 34px;
       }
 
+
       .brand {
+
         gap: 9px;
       }
 
+
       .brand-txt strong {
+
         font-size: 11px;
 
         max-width: 230px;
@@ -267,19 +349,25 @@
         text-overflow: ellipsis;
       }
 
+
       .brand-txt span {
+
         display: none;
       }
 
+
       .badge {
+
         height: 24px;
 
         padding: 0 9px;
 
         font-size: 9px;
       }
+
 
       .date {
+
         height: 24px;
 
         padding: 0 9px;
@@ -287,16 +375,31 @@
         font-size: 9px;
       }
 
-      .main-wrap {
-        height: calc(100vh - 50px);
 
-        padding: 4px 4px 6px 4px;
+      .main-wrap {
+
+        height:
+          calc(100vh - 78px);
+
+        padding:
+          4px 4px 5px 4px;
       }
+
 
       .iframe-container {
+
         border-radius: 7px;
       }
+
+
+      .footer {
+
+        height: 28px;
+
+        font-size: 8px;
+      }
     }
+
 
     /* =========================================================
        MOBILE
@@ -304,35 +407,48 @@
     @media (max-width: 480px) {
 
       .topbar {
+
         height: 46px;
 
         padding: 0 10px;
       }
 
+
       .seal {
+
         width: 30px;
         height: 30px;
       }
 
+
       .brand {
+
         gap: 7px;
       }
 
+
       .brand-txt strong {
+
         font-size: 10px;
 
         max-width: 145px;
       }
 
+
       .brand-txt span {
+
         display: none;
       }
+
 
       .badge {
+
         display: none;
       }
 
+
       .date {
+
         height: 22px;
 
         padding: 0 8px;
@@ -340,16 +456,37 @@
         font-size: 9px;
       }
 
-      .main-wrap {
-        height: calc(100vh - 46px);
 
-        padding: 3px 3px 4px 3px;
+      .main-wrap {
+
+        height:
+          calc(100vh - 72px);
+
+        padding:
+          3px 3px 4px 3px;
       }
+
 
       .iframe-container {
+
         border-radius: 5px;
       }
+
+
+      .footer {
+
+        height: 26px;
+
+        font-size: 7.5px;
+
+        white-space: nowrap;
+
+        overflow: hidden;
+
+        text-overflow: ellipsis;
+      }
     }
+
 
     /* =========================================================
        VERY SMALL MOBILE
@@ -357,34 +494,50 @@
     @media (max-width: 360px) {
 
       .brand-txt strong {
+
         max-width: 120px;
       }
 
+
       .date {
+
         font-size: 8px;
 
         padding: 0 6px;
       }
+
+
+      .footer {
+
+        font-size: 7px;
+      }
     }
+
   </style>
 </head>
 
+
 <body>
 
+
   <!-- =======================================================
-       TOPBAR
+       HEADER
   ======================================================== -->
   <header class="topbar">
+
 
     <!-- LOGO + TÊN BAN -->
     <div class="brand">
 
       <div class="seal">
+
         <img
           src="logobgtnn.png"
           alt="Logo Ban QLDA Giao thông và Nông nghiệp Đà Nẵng"
         >
+
       </div>
+
 
       <div class="brand-txt">
 
@@ -408,6 +561,7 @@
         📊 KH 2026
       </span>
 
+
       <span
         class="date"
         id="currentDate"
@@ -420,8 +574,9 @@
   </header>
 
 
+
   <!-- =======================================================
-       MAIN DASHBOARD
+       DASHBOARD LOOKER STUDIO
   ======================================================== -->
   <main class="main-wrap">
 
@@ -439,6 +594,22 @@
   </main>
 
 
+
+  <!-- =======================================================
+       FOOTER
+  ======================================================== -->
+  <footer class="footer">
+
+    BAN GIAO THÔNG &amp; NÔNG NGHIỆP ĐÀ NẴNG
+    &nbsp;·&nbsp;
+    HỆ THỐNG BÁO CÁO GIẢI NGÂN
+    &nbsp;·&nbsp;
+    KẾ HOẠCH VỐN 2026
+
+  </footer>
+
+
+
   <!-- =======================================================
        JAVASCRIPT
   ======================================================== -->
@@ -450,14 +621,23 @@
 
         const now = new Date();
 
+
         const options = {
+
           day: "2-digit",
+
           month: "2-digit",
+
           year: "numeric"
+
         };
 
+
         const dateElement =
-          document.getElementById("currentDate");
+          document.getElementById(
+            "currentDate"
+          );
+
 
         if (dateElement) {
 
@@ -473,6 +653,7 @@
     );
 
   </script>
+
 
 </body>
 </html>
